@@ -1,52 +1,71 @@
 body{
-	font-family:sans-serif;
 	display:flex;
+	text-align:center; /*il contenuto della pagina avrà un allineamento del testo centrale per mantenere comunque un layout disposto a colonne*/	
 	flex-direction:column;		/*impostiamo il body in modo da avere un layout a colonne*/
-	text-align:center;
 	color:white;
 	font-size:20px;
 }
+
+
+/*CLASSE MAIN CHE CONTIENE IL CONTENUTO AL CENTRO DELLA PAGINA OVVERO LE SEZIONI LEFT, RIGHT E MAIN-CONTENT*/
 .main{
-	display:flex;
-	padding:1%;
+	display:flex; /*impostiamo display flex in modo da avere una maggiore libertà sul posizionamento degli elementi, in questo esercizio viene usato 
+						principalmente per mettere in evidenza il contenuto principale rispetto a le sezioni left e right*/				
+	padding:1%; /*diamo un lieve padding in modo da non avere */
 }
+/*FINE MAIN*/
+
+
 /*HEADER SECTION*/
 #header{
 	background-color:white;
 	color:black;
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	padding-right:2%;
+	display:flex; /*impostiamo anche per l'header un display flex in modo da avere più flessibilità nel posizionamento*/
+	justify-content:space-between; /*justify-content viene utilizzato per disporre i vari elementi dell'header orizzontalmente*/
+	align-items:center; /*utilizziamo align-items in modo che i vari elementi block-level siano disposti alla stessa altezza*/
+	padding-right:2%; /*impostiamo un padding in modo da non avere gli elementi appiccicati alle estremità della finestra di visualizzazione*/
 	padding-left:2%;
+	font-family: 'Gloria Hallelujah', cursive; /*font disponibile grazie all'import da google fonts*/
 }
 #header h1{
-	font-family:Times New Roman;
-	font-size:70px;
-	opacity:65%;
+	font-size:60px;
 }
 #header ul{
 	list-style-type: none;
-	text-decoration:none;
 }
 #header li{
-	font-size:30px;
+	font-size:25px;
 	padding:2%;
 }
 #header a{
-	text-decoration:none;
-	color:black;
-	opacity:70%;
+	text-decoration:none; /*togliamo la sottolineatura dagli elementi anchor*/
+	color:black; /*il colore resterà lo stesso anche dopo i cambiamenti di stato*/
 }
-#header a:hover{
-	opacity:100%;
+#header li:hover{
+	border-style:solid;
+	border-radius:20px 10px 20px 10px; /*usiamo border radius per creare un bordo "arrotondato" per gli elementi della lista*/
+	color:white;
+	background-color:green; /*cambiamo il colore dello sfondo per dare un effetto ottico differente quando gli elementi della lista sono puntati*/
+}
+#header a:hover{ /*usiamo la subclasse hover per aumentare cambiare il colore del font quando il cursore punta su di esso*/
+	color:white;
 }
 /*FINE HEADER*/
+
+
+/*MAIN-CONTENT SECTION*/
 #main-content{
 	background-color:black;
-	padding:5%;
+	padding:2%;
 	flex:5 5 100px;
 }
+.description{
+	font-family: 'Garamond',serif;
+	font-size:25px;
+}
+/*FINE MAIN-CONTENT*/
+
+
 /*LEFT SECTION*/
 #left{
 	background-color:black;
@@ -54,12 +73,18 @@ body{
 	padding:5%;
 	flex:1 1 100px;
 }
+/*stilizzazione della tabella e degli elementi thead e tfoot in modo da avere un contrasto di colori*/
 #left table{
 	border-style:solid;
 	border-color:white;
 }
-#left .stanza{
+/*qui creiamo due classi appartenenti all'identificatore left, che saranno assegnate alle colonne della tabella contenente
+i nomi delle stanze disponibili con il relativo prezzo*/
+#left .stanza{ 
 	font-family: Brush script MT;
+}
+#left .stanza:hover{ 
+	background-color:blue;
 }
 #left .prezzo{
 	font-family:cursive;
@@ -73,11 +98,18 @@ body{
 	background-color:green;
 }
 /*FINE LEFT*/
+
+
+/*SEZIONE RIGHT*/
 #right{
 	background-color:black;
 	padding:5%;
 	flex:1 1 100px;
 }
+/*FINE RIGHT*/
+
+
+/*SEZIONE FOOTER*/
 #footer{
 	background-color:white;
 	color:black;
@@ -85,40 +117,60 @@ body{
 #footer ul{
 	list-style-type:none;
 }
+#footer h1{
+	font-family: 'Gloria Hallelujah', cursive;
+}
 #footer li{
 	display:inline;
 	padding-left:10%;
 	padding-right:10%;
+	opacity:75%;
 }
-#footer p{
-	font-family: Courier New;
+#footer li:hover{
 	opacity:100%;
 }
+#footer .webmaster{
+	font-family: Courier New;
+	font-size:12px;
+	color:black;
+	float:right;
+}
+/*FINE FOOTER*/
 
 
-@media all and (max-width: 800px){ /*da una disposizione in colonna mettendo in evidenza la il contenuto principale quando si rimpicciolisce la pagina*/
+/*qui utilizziamo una media query per il display, quando le dimensioni del display o della finestra di visualizzazione scendono sotto gli 800px di larghezza
+allora il contenuto si disponde lungo una sola colonna avente tante righe quanti sono i vari div utilizzati per creare il layout iniziale*/
+@media all and (max-width: 800px){ /*da una disposizione in colonna mettendo in evidenza la il contenuto principale quando si riducono le dimensioni della finestra di visualizzazione*/
 	.main{
-		flex-direction:column;
+		flex-direction:column; /*impostiamo il layout degli elementi della classe main a colonna*/
 	}
-	#main{
-		padding:5%;
+	#main-content{
+		padding:5%; /*padding per non avere il contenuto di questa sezione molto vicino alle estremità*/
 	}
 	#header{
-		flex-direction:column; /*in modo che la lista vada sotto il titolo e l'immagine*/
+		flex-direction:column; /*in questo modo gli elementi dell'header si disporranno in colonna al rimpicciolirsi della finestra di visualizzazione*/
+		align-items:center;
+	}
+	#header ul{
+		margin-right:50px; /*impostiamo il margine per posizionare più centralmente possibile la lista. In questo caso utilizziamo l'unità
+		px e non % in quanto il posizionamento dovrà essere asssoluto e non relativo*/
 	}
 	#header li{
 		display:flex;
-		justify-content:center;
-		align-items:center;
+		justify-content:center;	/*gli elementi della lista al rimpicciolirsi della finestra di visualizzazione si dispongono verticalmente*/
 	}
 	#left{
 		display:flex;
 		justify-content: center; /*la tabella si sposta al centro piuttosto che rimanere nell'estremità sinistra della pagina*/
 		align-items: center;
 	}
+	#footer ul{
+		margin-right:50px; /*impostiamo il margine per posizionare più centralmente possibile la lista. In questo caso utilizziamo l'unità
+		px e non % in quanto il posizionamento dovrà essere asssoluto e non relativo*/
+	}
 	#footer li{
 		display:flex;
-		flex-direction:columns;
-		justify-content:center;
+		flex-direction:columns;  /*gli elementi della lista al rimpicciolirsi della finestra di visualizzazione si dispongono verticalmente*/
+		justify-content:center; /*manteniamo comunque un assetto centrale */
 	}
 }
