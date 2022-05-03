@@ -1,4 +1,5 @@
 body{
+<<<<<<< HEAD
 	display:flex;
 	text-align:center; /*il contenuto della pagina avrà un allineamento del testo centrale per mantenere comunque un layout disposto a colonne*/	
 	flex-direction:column;		/*impostiamo il body in modo da avere un layout a colonne*/
@@ -16,10 +17,24 @@ body{
 /*FINE MAIN*/
 
 
+=======
+	font-family:sans-serif;
+	display:flex;
+	flex-direction:column;		/*impostiamo il body in modo da avere un layout a colonne*/
+	text-align:center;
+	color:white;
+	font-size:20px;
+}
+.main{
+	display:flex;
+	padding:1%;
+}
+>>>>>>> 83647ce5b25a71cd1b5c87f18d0f946a69e9a5d2
 /*HEADER SECTION*/
 #header{
 	background-color:white;
 	color:black;
+<<<<<<< HEAD
 	display:flex; /*impostiamo anche per l'header un display flex in modo da avere più flessibilità nel posizionamento*/
 	justify-content:space-between; /*justify-content viene utilizzato per disporre i vari elementi dell'header orizzontalmente*/
 	align-items:center; /*utilizziamo align-items in modo che i vari elementi block-level siano disposti alla stessa altezza*/
@@ -66,6 +81,40 @@ body{
 /*FINE MAIN-CONTENT*/
 
 
+=======
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-right:2%;
+	padding-left:2%;
+
+}
+#header h1{
+	font-family:impact;
+}
+#header ul{
+	list-style-type: none;
+	text-decoration:none;
+}
+#header li{
+	font-size:30px;
+	padding:2%;
+}
+#header a{
+	text-decoration:none;
+	color:black;
+	opacity:70%;
+}
+#header a:hover{
+	opacity:100%;
+}
+/*FINE HEADER*/
+#main-content{
+	background-color:black;
+	padding:5%;
+	flex:5 5 100px;
+}
+>>>>>>> 83647ce5b25a71cd1b5c87f18d0f946a69e9a5d2
 /*LEFT SECTION*/
 #left{
 	background-color:black;
@@ -73,11 +122,15 @@ body{
 	padding:5%;
 	flex:1 1 100px;
 }
+<<<<<<< HEAD
 /*stilizzazione della tabella e degli elementi thead e tfoot in modo da avere un contrasto di colori*/
+=======
+>>>>>>> 83647ce5b25a71cd1b5c87f18d0f946a69e9a5d2
 #left table{
 	border-style:solid;
 	border-color:white;
 }
+<<<<<<< HEAD
 /*qui creiamo due classi appartenenti all'identificatore left, che saranno assegnate alle colonne della tabella contenente
 i nomi delle stanze disponibili con il relativo prezzo*/
 #left .stanza{ 
@@ -86,6 +139,11 @@ i nomi delle stanze disponibili con il relativo prezzo*/
 #left .stanza:hover{ 
 	background-color:blue;
 }
+=======
+#left .stanza{
+	font-family: Brush script MT;
+}
+>>>>>>> 83647ce5b25a71cd1b5c87f18d0f946a69e9a5d2
 #left .prezzo{
 	font-family:cursive;
 }
@@ -98,14 +156,18 @@ i nomi delle stanze disponibili con il relativo prezzo*/
 	background-color:green;
 }
 /*FINE LEFT*/
+<<<<<<< HEAD
 
 
 /*SEZIONE RIGHT*/
+=======
+>>>>>>> 83647ce5b25a71cd1b5c87f18d0f946a69e9a5d2
 #right{
 	background-color:black;
 	padding:5%;
 	flex:1 1 100px;
 }
+<<<<<<< HEAD
 /*FINE RIGHT*/
 
 
@@ -113,17 +175,28 @@ i nomi delle stanze disponibili con il relativo prezzo*/
 #footer{
 	background-color:white;
 	color:black;
+=======
+#footer{
+	background-color:white;
+	color:black;
+	
+	
+>>>>>>> 83647ce5b25a71cd1b5c87f18d0f946a69e9a5d2
 }
 #footer ul{
 	list-style-type:none;
 }
+<<<<<<< HEAD
 #footer h1{
 	font-family: 'Gloria Hallelujah', cursive;
 }
+=======
+>>>>>>> 83647ce5b25a71cd1b5c87f18d0f946a69e9a5d2
 #footer li{
 	display:inline;
 	padding-left:10%;
 	padding-right:10%;
+<<<<<<< HEAD
 	opacity:75%;
 }
 #footer li:hover{
@@ -172,5 +245,20 @@ allora il contenuto si disponde lungo una sola colonna avente tante righe quanti
 		display:flex;
 		flex-direction:columns;  /*gli elementi della lista al rimpicciolirsi della finestra di visualizzazione si dispongono verticalmente*/
 		justify-content:center; /*manteniamo comunque un assetto centrale */
+=======
+}
+#footer p{
+	font-family: Courier New;
+	opacity:100%;
+}
+
+
+@media all and (max-width: 550px){ /*da una disposizione in colonna mettendo in evidenza la il contenuto principale quando si rimpicciolisce la pagina*/
+	.main{
+		flex-direction:column;
+	}
+	#main{
+		padding:5%;
+>>>>>>> 83647ce5b25a71cd1b5c87f18d0f946a69e9a5d2
 	}
 }
