@@ -1,0 +1,124 @@
+body{
+	font-family:sans-serif;
+	display:flex;
+	flex-direction:column;		/*impostiamo il body in modo da avere un layout a colonne*/
+	text-align:center;
+	color:white;
+	font-size:20px;
+}
+.main{
+	display:flex;
+	padding:1%;
+}
+/*HEADER SECTION*/
+#header{
+	background-color:white;
+	color:black;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-right:2%;
+	padding-left:2%;
+}
+#header h1{
+	font-family:Times New Roman;
+	font-size:70px;
+	opacity:65%;
+}
+#header ul{
+	list-style-type: none;
+	text-decoration:none;
+}
+#header li{
+	font-size:30px;
+	padding:2%;
+}
+#header a{
+	text-decoration:none;
+	color:black;
+	opacity:70%;
+}
+#header a:hover{
+	opacity:100%;
+}
+/*FINE HEADER*/
+#main-content{
+	background-color:black;
+	padding:5%;
+	flex:5 5 100px;
+}
+/*LEFT SECTION*/
+#left{
+	background-color:black;
+	color:white;
+	padding:5%;
+	flex:1 1 100px;
+}
+#left table{
+	border-style:solid;
+	border-color:white;
+}
+#left .stanza{
+	font-family: Brush script MT;
+}
+#left .prezzo{
+	font-family:cursive;
+}
+#left thead{
+	color:white;
+	background-color:green;
+}
+#left tfoot{
+	color:white;
+	background-color:green;
+}
+/*FINE LEFT*/
+#right{
+	background-color:black;
+	padding:5%;
+	flex:1 1 100px;
+}
+#footer{
+	background-color:white;
+	color:black;
+}
+#footer ul{
+	list-style-type:none;
+}
+#footer li{
+	display:inline;
+	padding-left:10%;
+	padding-right:10%;
+}
+#footer p{
+	font-family: Courier New;
+	opacity:100%;
+}
+
+
+@media all and (max-width: 800px){ /*da una disposizione in colonna mettendo in evidenza la il contenuto principale quando si rimpicciolisce la pagina*/
+	.main{
+		flex-direction:column;
+	}
+	#main{
+		padding:5%;
+	}
+	#header{
+		flex-direction:column; /*in modo che la lista vada sotto il titolo e l'immagine*/
+	}
+	#header li{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	#left{
+		display:flex;
+		justify-content: center; /*la tabella si sposta al centro piuttosto che rimanere nell'estremità sinistra della pagina*/
+		align-items: center;
+	}
+	#footer li{
+		display:flex;
+		flex-direction:columns;
+		justify-content:center;
+	}
+}
