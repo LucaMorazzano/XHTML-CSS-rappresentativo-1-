@@ -19,7 +19,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			<h1 class="borderh1">I NOSTRI SERVIZI ...</h1>
 			<a href="home.html" title="home">Torna alla home</a>
 		</div>
-		<div id="bar">
+		<div id="center">
 			<h2>IL BAR</h2>
 			<p class="description">
 			La qualità del caffè, il sorriso dei baristi e l’azzurro del mare sono gli ingredienti vincenti per iniziare la giornata con il piede giusto.

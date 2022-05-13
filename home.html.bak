@@ -12,7 +12,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 		<!-- importiamo anche i font che utilizzeremo da googlefonts -->
 		<style type="text/css">
 			@import url(stile1.css);
-			
 		</style>
 	</head>
 		
@@ -22,8 +21,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			 <h1> Hotel Europa </h1> 
 			 <ul>
 			 <li> <a href="" title="Home" > Home </a> </li>
-			 <li> <a href="" title="Info"> Info </a> </li>
-			 <li>  <a href="" title="Contatti"> Contatti </a> </li> <!-- gli elementi anchor non rimandano a nessuna pagina per il momento -->
+			 <li> <a href="info.html" title="Servizi"> Servizi </a> </li>
+			 <li>  <a href="contatti.html" title="Contatti"> Contatti </a> </li> 
 			 </ul>
 		</div>
 	
@@ -32,8 +31,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			<table border="1">
 					<thead>
 						<tr>
-							<th>Nome stanza</th>
-							<th>Prezzo</th>
+							<th>Tipo Camera</th>
+							<th>Prezzo per notte</th>
 						</tr>
 					</thead>
 					<tfoot>
@@ -43,24 +42,24 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 					</tfoot>
 					<tbody>
 						<tr>
-							<td class="stanza">Stanza 1</td>
-							<td class="prezzo">100&euro;</td>
+							<td class="stanza">Singola</td>
+							<td class="prezzo">99&euro;</td>
 						</tr>
 						<tr>
-							<td class="stanza">Stanza 1</td>
-							<td class="prezzo">100&euro;</td>
+							<td class="stanza">Doppia</td>
+							<td class="prezzo">159&euro;</td>
 						</tr>
 						<tr>
-							<td class="stanza">Stanza 1</td>
-							<td class="prezzo">100&euro;</td>
+							<td class="stanza">Quadrupla</td>
+							<td class="prezzo">259&euro;</td>
 						</tr>
 						<tr>
-							<td class="stanza">Stanza 1</td>
-							<td class="prezzo">100&euro;</td>
+							<td class="stanza">Singola Premium</td>
+							<td class="prezzo">129&euro;</td>
 						</tr>
 						<tr>
-							<td class="stanza">Stanza 1</td>
-							<td class="prezzo">100&euro;</td>
+							<td class="stanza">Suite</td>
+							<td class="prezzo">399&euro;</td>
 						</tr>
 					</tbody>
 				</table>
