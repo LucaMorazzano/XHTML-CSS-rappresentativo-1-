@@ -27,5 +27,5 @@ a disposizione orizzontale che cambia in verticale al rimpicciolirsi della fines
 
 
 PERCORSO INSTALLAZIONE LWEB:
-Fionda: lweb.diag.uniroma1.it/~lweb18/RAPPRESENTATIVO1/contributo1
+Fionda: http://lweb.diag.uniroma1.it/~lweb18/RAPPRESENTATIVO1/contributo1
 Morazzano: http://lweb.diag.uniroma1.it/~lweb25/RAPPRESENTATIVO%20CSS%201/contributo1.luca.morazzano/XHTML-CSS-rappresentativo-1--main/
