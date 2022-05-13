@@ -135,6 +135,9 @@ i nomi delle stanze disponibili con il relativo prezzo*/
 	color:black;
 	float:right;
 }
+#footer a{
+	text-decoration:none;
+}
 /*FINE FOOTER*/
 
 

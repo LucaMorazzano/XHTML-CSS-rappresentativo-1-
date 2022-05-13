@@ -61,7 +61,7 @@ body{
 }
 .description{
 	font-family: 'Garamond',serif;
-	font-size:20px;
+	font-size:25px;
 }
 /*FINE MAIN-CONTENT*/
 
