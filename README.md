@@ -24,11 +24,11 @@ di una media_query che cambia la flex-direction in column quando si verificano l
 Nella sezione footer troviamo invece un titolo realizzato con tag h2 e opportunamente stilizzato, seguito da una lista di immagini
 a disposizione orizzontale che cambia in verticale al rimpicciolirsi della finestra di visualizzazione.
 
--Contatti.html : la pagina contatti.html è basata sullo stesso layout di home.html e ne eredita la stilizzazione per ogni contenuto presente.
+- Contatti.html : la pagina contatti.html è basata sullo stesso layout di home.html e ne eredita la stilizzazione per ogni contenuto presente.
 Alcuni elementi sono stati stilizzati con css interni poichè usando lo stesso foglio di stile esterno usato per home.html, si verificavano
 dei conflitti nella stilizzazione.
 
--Info.html : La pagina info.html è stata realizzata utilizzando un secondo foglio di stile chiamato "stile2.css". Il layout è basato
+- Info.html : La pagina info.html è stata realizzata utilizzando un secondo foglio di stile chiamato "stile2.css". Il layout è basato
 su un unica colonna composta da tre contenitori con bordi arrotondati (effetto realizzato grazie alla proprietà border-radius), che descrivono
 i vari servizi presenti nell'hotel.
 
