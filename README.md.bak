@@ -11,7 +11,7 @@ Segue una descrizione degli elementi usati e delle scelte di stile effettuate pe
 - Home.html : la pagina home.html è basata su un layout a tre colonne a display flessibile che cambia
 la disposizione degli elementi al rimpicciolirsi delle dimensioni della finestra di visualizzazione, l'effetto che si manifesta è una disposizione verticale degli elementi lungo una singola colonna;
 una sezione header ed una footer. 
-Nella sezione header sono presenti un logo, un titolo ed una lista contenente elementi anchor che offrono delle animazioni quando il cursore si posiziona su di loro.
+Nella sezione header sono presenti un logo, un titolo ed una lista contenente elementi anchor, che rimandano alle altre pagine del sito e che offrono delle animazioni quando il cursore si posiziona su di loro.
 Questa animazione è stata realizzata mediante l'utilizzo della subclasse :hover.
 Nella sezione principale ovvero quella compresa tra header e footer, il contenuto è disposto in un layout a tre colonne.
 Nella colonna di sinistra è presente una tabella contenente le stanze disponibili. Tale tabella è stata stilizzata utilizzando la subclasse :hover
@@ -28,4 +28,4 @@ a disposizione orizzontale che cambia in verticale al rimpicciolirsi della fines
 
 PERCORSO INSTALLAZIONE LWEB:
 Fionda: lweb.diag.uniroma1.it/~lweb18/RAPPRESENTATIVO1/contributo1
-Morazzano: lweb.diag.uniroma1.it/~lweb25/RAPPRESENTATIVO%20CSS%201/XHTML-CSS-rappresentativo-1--main
+Morazzano: http://lweb.diag.uniroma1.it/~lweb25/RAPPRESENTATIVO%20CSS%201/contributo1.luca.morazzano/XHTML-CSS-rappresentativo-1--main/

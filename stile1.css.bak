@@ -25,7 +25,7 @@ body{
 	align-items:center; /*utilizziamo align-items in modo che i vari elementi block-level siano disposti alla stessa altezza*/
 	padding-right:2%; /*impostiamo un padding in modo da non avere gli elementi appiccicati alle estremità della finestra di visualizzazione*/
 	padding-left:2%;
-	font-family: 'Gloria Hallelujah', cursive; /*font disponibile grazie all'import da google fonts*/
+	font-family: 'Gloria Hallelujah', cursive;
 }
 #header h1{
 	font-size:60px;
@@ -83,7 +83,7 @@ i nomi delle stanze disponibili con il relativo prezzo*/
 #left .stanza{ 
 	font-family: Brush script MT;
 }
-#left .stanza:hover{ 
+#left tr:hover{ 
 	background-color:blue;
 }
 #left .prezzo{
@@ -134,6 +134,9 @@ i nomi delle stanze disponibili con il relativo prezzo*/
 	font-size:12px;
 	color:black;
 	float:right;
+}
+#footer a{
+	text-decoration:none;
 }
 /*FINE FOOTER*/
 

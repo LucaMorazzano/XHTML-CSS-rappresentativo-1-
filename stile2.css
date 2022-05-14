@@ -3,49 +3,8 @@ body{
 	text-align:center;
 	flex-direction:column; /*disposizione elementi in colonna*/
 }
-
-#header{
-	display:flex;
-	padding-left:2%;
-	padding-right:2%;
-	justify-content:space-between;
-	align-items:center;
-}
-#header a{
-	text-decoration:none;
-	font-family:'Gloria Hallelujah', cursive;
-	font-size:25px;
-	color:black;
-}
-#header a:hover{
-	border-style:solid;
-	border-radius:20px 10px 20px 10px;
-	color:white;
-	background-color:green;
-}
-.borderh1{
-	font-size:60px;
-	padding:2%;
-	color:black;
-	font-family:'Gloria Hallelujah', cursive;
-}
-/*FINE HEADER*/
-
-#bar{
-	display:flex;
-	margin-left:2%;
-	margin-right:2%;
-	margin-top:1%;
-	background-color:black;
-	justify-content:space-between;
-	align-items:center;
-	border-radius:100px 100px 100px 100px;
-}
-#bar img{
-	border-radius: 100px 100px 100px 100px;
-	padding:1%;
-}
-#bar h2{
+/*classi generiche usate per stilizzare le tre sezioni principali*/
+.titolobordrad{
 	font-size:40px;
 	color:white;
 	font-family:'Gloria Hallelujah', cursive;
@@ -62,17 +21,82 @@ body{
 	color:white;
 	padding:1%;
 }
-/*INIZIO FOOTER*/
-#footer{
+.imgbord{
+	border-radius: 100px 100px 100px 100px;
+	padding:1%;
+}
+/*SEZIONE HEADER*/	
+#header{
 	display:flex;
-	flex-direction:column;
+	padding-left:2%;
+	padding-right:2%;
+	justify-content:space-between;
+	align-items:center;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+#header ul{
+	list-style-type: none;
+}
+#header li{
+	font-size:25px;
+	padding:2%;
+}
+#header a{
+	text-decoration:none; /*togliamo la sottolineatura dagli elementi anchor*/
+	color:black; /*il colore resterà lo stesso anche dopo i cambiamenti di stato*/
+}
+#header li:hover{
+	border-style:solid;
+	border-radius:20px 10px 20px 10px; /*usiamo border radius per creare un bordo "arrotondato" per gli elementi della lista*/
+	color:white;
+	background-color:green; /*cambiamo il colore dello sfondo per dare un effetto ottico differente quando gli elementi della lista sono puntati*/
+}
+#header a:hover{ /*usiamo la subclasse hover per aumentare cambiare il colore del font quando il cursore punta su di esso*/
+	color:white;
+}
+.borderh1{
+	font-size:60px;
+	padding:2%;
+	color:black;
+}
+/*nelle tre sezioni che seguono utilizziamo la stessa stilizzazione basata su un display flessibile che si dispone in colonna al restringimento
+della finestra di visualizzazione*/
+/*SEZIONE BAR*/
+#bar{
+	display:flex;
 	margin-left:2%;
 	margin-right:2%;
 	margin-top:1%;
 	background-color:black;
+	justify-content:space-between;
+	align-items:center;
+	border-radius:100px 100px 100px 100px; /*bordo arrotondato alla sezione*/
+}
+/*SEZIONE RISTORANTE*/
+#ristorante{
+	display:flex;
+	background-color:black;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:1%;
+	background-color:black;
+	justify-content:space-between; 
+	align-items:center;
+	border-radius:100px 100px 100px 100px; /*bordo arrotondato alla sezione*/
+}
+/*SEZIONE DRINK*/
+#drink{
+	display:flex;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:1%;
+	background-color:black;
+	justify-content:space-between;
+	align-items:center;
+	border-radius:100px 100px 100px 100px; 
 	
 }
-
+/*MEDIA QUERY*/
 @media all and (max-width: 800px){
 	#header{
 		flex-direction:column;
@@ -80,3 +104,10 @@ body{
 	#bar{
 		flex-direction:column;
 	}
+	#ristorante{
+		flex-direction:column;
+	}
+	#drink{
+		flex-direction:column;
+	}
+}

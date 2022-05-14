@@ -30,7 +30,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 				 </div>
 			<div id="main-content">
 			<p>Per ogni vostro dubbio...</p>
-			<table style="margin-left:auto; margin-right:auto;" border="1">
+			<table style="margin-left:auto; margin-right:auto; "border="1">
 			<thead style="background-color:green">
 						<tr>
 							<th>Contatto</th>
